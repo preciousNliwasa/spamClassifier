@@ -1,0 +1,59 @@
+<! doctype html>
+
+<html>
+<head>
+	<title>nliwasa</title>
+	<style type = 'text/css'>
+		h1 {background-color:aquamarine;text-align:center;border-radius:40px;height:70px;color:white;}
+		body {background-color:peachpuff;}
+		form {text-align:center;background-color:lightcoral;height:60%;border-radius:20px;}
+		#cl,#pre {border-radius:20px;padding:20px;background-color:aquamarine;}
+		h2 {height:30px;}
+	</style>
+
+</head>
+
+<body>
+
+		<h1>SPAM OR HAM CLASSIFIER<br/>Acious</h1>
+
+		
+		<br/>
+		<br/>
+		<form action = "/predict" method = 'POST'>
+		
+			<br/>
+			<br/>
+			<br/>
+			MESSAGE
+			<br/>
+			<textarea name = 'message'>
+		
+			</textarea><br/>
+			<br/><br/>
+			<button id = 'cl' type = 'reset' >clear</button>
+			<button id = 'pre' type = 'submit' >predict</button>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+			<br/>
+		
+			<br/>
+			<br/>
+			<h2> {{ prediction }}</h2><br/>
+			
+			
+		</form>
+		
+		
+
+
+
+
+
+</body>
+
+</html>
